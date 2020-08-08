@@ -81,6 +81,10 @@ WSGI_APPLICATION = 'Dark_light.wsgi.application'
    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     #}
 #}
+
+import dj_database_url
+from decouple import config
+
 DATABASES={
     'default': dj_databases_url.config(
         default=config('DATABASE_URL')
