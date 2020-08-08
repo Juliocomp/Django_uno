@@ -31,7 +31,7 @@ def Vista_crear(request):
 
 
 def Vista_edicion(request, primary_key):
- 
+    
     tareas=Tarea_ind.objects.get(id=primary_key)
     form=Tarea_form(instance=tareas)
     if request.method=='POST':
