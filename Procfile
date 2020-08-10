@@ -1,1 +1,1 @@
-web: gunicorn Dark_light.wsgi --log-file-
+web: gunicorn Dark_light.wsgi --log-file -
