@@ -16,8 +16,9 @@
                 {% for tarea in tareas %}
                 <div class="card">
                     <p>{{ tarea }}</p>
-                    <a href="/edicion/{{ tarea.id }}">Editar</a>
+                    <a href="/edicion/{{ tarea.id }}">Ver tarea</a>
                     <a href="/eliminar/{{ tarea.id }}">Eliminar</a>
+                    
                 </div>
             {% endfor %}
             </section>
